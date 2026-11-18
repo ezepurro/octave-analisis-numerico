@@ -12,7 +12,7 @@ x = 10*cos(2*pi*150*t) + 5*sin(2*pi*1000*t);
 Fc = 500;
 
 Nh = 101;
-nh = -(Nh-1)/2 : (Nh-1)/2;
+nh = -(Nh-1)/2 : (Nh-1)/2;    %-50..50
 h = 2*Fc*dt * sinc(2*Fc*dt*nh);
 
 ny_inicio = n(1)   + nh(1);   % 0 + (-50)  = -50
